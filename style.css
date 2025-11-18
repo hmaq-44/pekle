@@ -1,0 +1,217 @@
+:root {
+    --primary-color: #FF8C00; /* البرتقالي */
+    --background-color: #FFFFFF; /* الأبيض */
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* خلفية خفيفة لتمييز البطاقات */
+    color: var(--text-color);
+    direction: rtl;
+    text-align: right;
+}
+
+header {
+    background-color: var(--background-color);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+header h1 {
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+/* قسم المنتجات */
+.products-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 10px;
+    gap: 25px;
+}
+
+.product-card {
+    background-color: var(--background-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-card h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+.tagline {
+    color: #666;
+    font-size: 0.9em;
+    height: 30px; /* لتثبيت الارتفاع بين البطاقات */
+}
+
+.price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 15px 0;
+}
+
+/* زر اطلب والعداد */
+.quantity-control {
+    margin-top: 20px;
+}
+
+.orange-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.orange-btn:hover {
+    background-color: #e67e22; /* برتقالي أغمق عند التمرير */
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.counter button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.counter .count {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0 15px;
+    color: var(--primary-color);
+}
+
+/* خيار حار/بارد */
+.flavour-options {
+    margin: 10px 0;
+}
+
+.flavour-select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* قسم نموذج الطلب */
+.order-form-section {
+    background-color: var(--background-color);
+    padding: 40px;
+    max-width: 500px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: right;
+}
+
+.order-form-section h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#order-form input[type="text"],
+#order-form input[type="tel"],
+#order-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1em;
+}
+
+#order-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#total-price {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+#total-price span {
+    color: var(--primary-color);
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+/* رسالة النجاح */
+#success-message {
+    text-align: center;
+    padding: 30px;
+    color: #333;
+}
+
+.checkmark-container {
+    font-size: 4em;
+    color: var(--primary-color);
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+#success-message p {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 0.9em;
+    margin-top: 30px;
+}
