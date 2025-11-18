@@ -1,92 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pickle House - مخللات طازجة</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
-    <header>
-        <h1>بيت المخللات | Pickle House</h1>
-    </header>
-
-    <main>
-        <section class="products-container">
-
-            <div class="product-card" data-product-id="carrot" data-price="25">
-                <img src="carrot.jpg" alt="مخلل الجزر">
-                <h2>مخلل الجزر</h2>
-                <p class="tagline">مقرمش، منعش، وضروري لكل وجبة!</p> <div class="price">25 ريال</div> <div class="quantity-control">
-                    <button class="orange-btn request-btn">اطلب</button>
-                    <div class="counter" style="display:none;">
-                        <button class="minus-btn">-</button>
-                        <span class="count">0</span>
-                        <button class="plus-btn">+</button>
-                    </div>
-                </div>
-            </div> <div class="product-card" data-product-id="beetroot" data-price="20">
-                <img src="beetroot.jpg" alt="مخلل الشمندر">
-                <h2>مخلل الشمندر</h2>
-                <p class="tagline">لون وردي فاخر وطعم لا يُنسى.</p> <div class="price">20 ريال</div> <div class="quantity-control">
-                    <button class="orange-btn request-btn">اطلب</button>
-                    <div class="counter" style="display:none;">
-                        <button class="minus-btn">-</button>
-                        <span class="count">0</span>
-                        <button class="plus-btn">+</button>
-                    </div>
-                </div>
-            </div> <div class="product-card" data-product-id="mixed" data-price="30">
-                <img src="mixed.jpg" alt="مخلل الخضار المشكلة">
-                <h2>مخلل الخضار المشكلة</h2>
-                <p class="tagline">توليفة من النكهات لتجربة حارة أو باردة حسب مزاجك!</p> <div class="price">30 ريال</div> <div class="flavour-options">
-                    <label>النوع:</label>
-                    <select class="flavour-select">
-                        <option value="بارد">بارد</option>
-                        <option value="حار">حار</option>
-                    </select>
-                </div>
-
-                <div class="quantity-control">
-                    <button class="orange-btn request-btn">اطلب</button>
-                    <div class="counter" style="display:none;">
-                        <button class="minus-btn">-</button>
-                        <span class="count">0</span>
-                        <button class="plus-btn">+</button>
-                    </div>
-                </div>
-            </div> </section>
-
-        <section class="order-form-section">
-            <h2>📞 اتمام الطلب</h2>
-            <form id="order-form">
-                <input type="text" id="name" placeholder="الاسم الكامل" required>
-                <input type="tel" id="phone" placeholder="رقم الجوال (للتواصل)" required>
-                <textarea id="notes" placeholder="ملاحظات إضافية (اختياري)"></textarea>
-
-                <div id="total-price">
-                    الإجمالي: <span>0</span> ريال
-                </div>
-
-                <button type="submit" class="orange-btn submit-btn">إرسال الطلب</button>
-            </form>
-            
-            <div id="success-message" style="display:none;">
-                <div class="checkmark-container">
-                    &#10003;
-                </div>
-                <p>تم استلام طلبك بنجاح! سنتواصل معك قريباً.</p>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Pickle House. جميع الحقوق محفوظة.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
