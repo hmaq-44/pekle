@@ -40,16 +40,28 @@
                         <button class="plus-btn">+</button>
                     </div>
                 </div>
-            </div> <div class="product-card" data-product-id="mixed" data-price="30">
-                <img src="mixed.png" alt="مخلل الخضار المشكلة">
-                <h2>مخلل الخضار المشكلة</h2>
-                <p class="tagline">توليفة من النكهات لتجربة حارة أو باردة حسب مزاجك!</p> <div class="price">30 ريال</div> <div class="flavour-options">
-                    <label>النوع:</label>
-                    <select class="flavour-select">
-                        <option value="بارد">بارد</option>
-                        <option value="حار">حار</option>
-                    </select>
-                </div>
+         <div class="product-card" data-product-id="mixed" data-price="30">
+    <img src="mixed.png" alt="مخلل الخضار المشكلة">
+    <h2>مخلل الخضار المشكلة</h2>
+    <p class="tagline">توليفة من النكهات لتجربة حارة أو باردة حسب مزاجك!</p>
+    <div class="price">30 ريال</div>
+
+    <div class="flavour-options">
+        <label for="hot-flavour-mixed" class="hot-flavour-label">
+            <span class="flavour-text">اجعله حار 🌶️</span>
+            <input type="checkbox" id="hot-flavour-mixed" class="flavour-switch">
+            <span class="flavour-slider"></span>
+        </label>
+    </div>
+    <div class="quantity-control">
+        <button class="orange-btn request-btn">اطلب</button>
+        <div class="counter" style="display:none;">
+            <button class="minus-btn">-</button>
+            <span class="count">0</span>
+            <button class="plus-btn">+</button>
+        </div>
+    </div>
+</div>
 
                 <div class="quantity-control">
                     <button class="orange-btn request-btn">اطلب</button>
@@ -92,6 +104,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
