@@ -223,4 +223,20 @@ footer {
     margin-top: 30px;
 
 }
+/* تنسيق الشعار في رأس الصفحة */
+header {
+    /* تنسيق الشعار ليكون في المنتصف وضمان المسافات */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid var(--primary-color); /* خط برتقالي أسفل الهيدر */
+    background-color: var(--background-color); /* خلفية بيضاء للهيدر */
+}
+
+.logo-img {
+    /* تحديد أقصى ارتفاع لضمان أن الشعار ليس ضخماً */
+    max-height: 90px; /* يمكنك زيادة هذا الرقم إذا كان الشعار صغيراً جداً */
+    width: auto;
+    display: block; /* لضمان تمركزه بشكل جيد */
+    margin: 0 auto; /* تمركز الشعار أفقياً */
+}
 
