@@ -1,37 +1,62 @@
 :root {
-    --primary-color: #FF7F50; /* لون مرجاني (Coral) أكثر دفئاً وجاذبية */
+    /* لون مرجاني (Coral) أكثر دفئاً وجاذبية */
+    --primary-color: #FF7F50; 
     --background-color: #FFFFFF;
     --text-color: #333;
 }
 
 body {
-    /* تغيير اسم الخط إلى Tajawal */
+    /* تغيير الخط إلى Tajawal وتحديد خلفية خفيفة */
     font-family: 'Tajawal', sans-serif;
     margin: 0;
     padding: 0;
-    /* ... بقية الخصائص ... */
-    background-color: #f8f8f8; 
+    background-color: #f8f8f8; /* خلفية رمادية فاتحة جداً لتمييز البطاقات */
     color: var(--text-color);
-    direction: rtl;
+    direction: rtl; /* اتجاه الصفحة الرئيسي من اليمين لليسار */
     text-align: right;
-    letter-spacing: 0.5px; /* الإبقاء على تباعد الحروف */
+    letter-spacing: 0.5px; 
 }
 
-/* لجعل العناوين أكثر شبهاً بشعار البيك، سنستخدم الوزن الثقيل */
-header h1 {
-    color: var(--primary-color);
-    margin: 0;
-    font-size: 2.5em;
-    font-weight: 900; /* تغيير الوزن ليكون أثقل وأجرأ (خط الشعار) */
-}
-header h1 {
-    color: var(--primary-color);
-    margin: 0;
-    font-size: 2.5em;
-    font-weight: 700;
+/* __________________________________________________ */
+/* تنسيق رأس الصفحة (الشعار + النص) */
+
+header {
+    background-color: var(--background-color); 
+    padding: 15px 5%; /* تباعد داخلي */
+    border-bottom: 4px solid var(--primary-color);
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; /* لتحريك العناصر لليسار */
+    direction: ltr; /* نجعل اتجاه الهيدر من اليسار لليمين */
+    text-align: left; 
 }
 
-/* قسم المنتجات */
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* مسافة بين الشعار والنص */
+}
+
+.logo-img {
+    max-height: 70px; /* حجم الشعار */
+    width: auto;
+    border-radius: 50%; /* لجعل الصورة دائرية */
+    border: 3px solid var(--primary-color); /* إطار حول الشعار */
+    padding: 3px;
+    object-fit: contain;
+}
+
+header h1 {
+    color: var(--text-color);
+    margin: 0;
+    font-size: 2.2em; /* حجم النص */
+    font-weight: 900; /* وزن ثقيل يشبه خط الشعار */
+    direction: ltr; 
+}
+
+/* __________________________________________________ */
+/* تنسيق المنتجات */
+
 .products-container {
     display: flex;
     justify-content: center;
@@ -41,15 +66,13 @@ header h1 {
 }
 
 .product-card {
-    /* تغيير أساسي: الخلفية بيضاء وزوايا مستديرة */
     background-color: var(--background-color);
     border-radius: 16px; /* زيادة استدارة الزوايا */
-    padding: 30px 20px; /* زيادة التباعد الداخلي */
+    padding: 30px 20px;
     width: 300px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    
-    /* إضافة ظل أكثر عمقاً وأناقة (هذا هو التغيير الجمالي الأساسي) */
+    /* ظل أفضل */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07); 
 }
 
@@ -75,7 +98,7 @@ header h1 {
 .tagline {
     color: #666;
     font-size: 0.9em;
-    height: 30px; /* لتثبيت الارتفاع بين البطاقات */
+    height: 30px; 
 }
 
 .price {
@@ -141,7 +164,9 @@ header h1 {
     border: 1px solid #ccc;
 }
 
+/* __________________________________________________ */
 /* قسم نموذج الطلب */
+
 .order-form-section {
     background-color: var(--background-color);
     padding: 40px;
@@ -167,7 +192,7 @@ header h1 {
     border: 1px solid #ccc;
     border-radius: 8px;
     box-sizing: border-box;
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     font-size: 1em;
 }
 
@@ -221,22 +246,4 @@ footer {
     color: white;
     font-size: 0.9em;
     margin-top: 30px;
-
 }
-/* تنسيق الشعار في رأس الصفحة */
-header {
-    /* تنسيق الشعار ليكون في المنتصف وضمان المسافات */
-    padding: 20px 0;
-    text-align: center;
-    border-bottom: 4px solid var(--primary-color); /* خط برتقالي أسفل الهيدر */
-    background-color: var(--background-color); /* خلفية بيضاء للهيدر */
-}
-
-.logo-img {
-    /* تحديد أقصى ارتفاع لضمان أن الشعار ليس ضخماً */
-    max-height: 90px; /* يمكنك زيادة هذا الرقم إذا كان الشعار صغيراً جداً */
-    width: auto;
-    display: block; /* لضمان تمركزه بشكل جيد */
-    margin: 0 auto; /* تمركز الشعار أفقياً */
-}
-
