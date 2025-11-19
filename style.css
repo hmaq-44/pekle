@@ -5,20 +5,25 @@
 }
 
 body {
-    /* إضافة مسافة بين الحروف لجعل النص العربي أجمل */
-    letter-spacing: 0.5px;
-    /* خلفية رمادية فاتحة جداً (لتبرز البطاقات البيضاء) */
-    background-color: #f8f8f8; 
+    /* تغيير اسم الخط إلى Tajawal */
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
     /* ... بقية الخصائص ... */
+    background-color: #f8f8f8; 
+    color: var(--text-color);
+    direction: rtl;
+    text-align: right;
+    letter-spacing: 0.5px; /* الإبقاء على تباعد الحروف */
 }
 
-header {
-    background-color: var(--background-color);
-    padding: 20px;
-    text-align: center;
-    border-bottom: 4px solid var(--primary-color);
+/* لجعل العناوين أكثر شبهاً بشعار البيك، سنستخدم الوزن الثقيل */
+header h1 {
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 900; /* تغيير الوزن ليكون أثقل وأجرأ (خط الشعار) */
 }
-
 header h1 {
     color: var(--primary-color);
     margin: 0;
@@ -218,3 +223,4 @@ footer {
     margin-top: 30px;
 
 }
+
