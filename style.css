@@ -1,17 +1,15 @@
 :root {
-    --primary-color: #FF8C00; /* البرتقالي */
-    --background-color: #FFFFFF; /* الأبيض */
+    --primary-color: #FF7F50; /* لون مرجاني (Coral) أكثر دفئاً وجاذبية */
+    --background-color: #FFFFFF;
     --text-color: #333;
 }
 
 body {
-    font-family: 'Cairo', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* خلفية خفيفة لتمييز البطاقات */
-    color: var(--text-color);
-    direction: rtl;
-    text-align: right;
+    /* إضافة مسافة بين الحروف لجعل النص العربي أجمل */
+    letter-spacing: 0.5px;
+    /* خلفية رمادية فاتحة جداً (لتبرز البطاقات البيضاء) */
+    background-color: #f8f8f8; 
+    /* ... بقية الخصائص ... */
 }
 
 header {
@@ -38,18 +36,22 @@ header h1 {
 }
 
 .product-card {
+    /* تغيير أساسي: الخلفية بيضاء وزوايا مستديرة */
     background-color: var(--background-color);
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    border-radius: 16px; /* زيادة استدارة الزوايا */
+    padding: 30px 20px; /* زيادة التباعد الداخلي */
     width: 300px;
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+    /* إضافة ظل أكثر عمقاً وأناقة (هذا هو التغيير الجمالي الأساسي) */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07); 
 }
 
 .product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px); /* جعل البطاقة ترتفع أكثر عند التمرير */
+    /* ظل أقوى عند التمرير */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); 
 }
 
 .product-card img {
@@ -214,4 +216,5 @@ footer {
     color: white;
     font-size: 0.9em;
     margin-top: 30px;
+
 }
