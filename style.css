@@ -38,11 +38,9 @@ header {
 }
 
 .logo-img {
-    max-height: 70px; /* حجم الشعار */
+    max-height: 70px; 
     width: auto;
-    border-radius: 50%; /* لجعل الصورة دائرية */
-    border: 3px solid var(--primary-color); /* إطار حول الشعار */
-    padding: 3px;
+    /* نكتفي بتحديد الارتفاع فقط لأن الصورة مصممة مسبقاً بشكل دائري */
     object-fit: contain;
 }
 
@@ -247,3 +245,4 @@ footer {
     font-size: 0.9em;
     margin-top: 30px;
 }
+
